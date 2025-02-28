@@ -1,0 +1,30 @@
+name: Amazon Scrapper
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow when pushing to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # The runner to execute the job
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Run the script with the API Key
+        run: |
+          python main.py
+        env:
+          SCRAPPER_API_KEY: ${{ secrets.SCRAPPER_API_KEY }}  
