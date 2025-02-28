@@ -606,9 +606,9 @@ def start_scheduler():
 
 # ----------------- Flask Routes -----------------
 
-# @app.route('/')
-# def home():
-#     return 'Flask App'
+@app.route('/')
+def home():
+    return 'Flask App: Amazon Scrapper'
 
 
 @app.route('/upload', methods=['POST'])
@@ -729,4 +729,6 @@ def run_automation():
 
 if __name__ == '__main__':
     # start_scheduler()
-    app.run(debug=True)
+    # app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))  # Get the port from environment variable
+    app.run(host='0.0.0.0', port=port, debug=True)
