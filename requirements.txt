@@ -4,7 +4,6 @@ APScheduler==3.11.0
 attrs==25.1.0
 beautifulsoup4==4.13.3
 blinker==1.9.0
-boto3==1.36.19
 botocore==1.36.19
 bs4==0.0.2
 certifi==2025.1.31
@@ -16,7 +15,6 @@ colorama==0.4.6
 cryptography==44.0.1
 easyocr==1.7.2
 et_xmlfile==2.0.0
-fastapi==0.115.8
 filelock==3.17.0
 Flask==3.1.0
 flask-cors==5.0.1
@@ -47,8 +45,6 @@ playwright==1.50.0
 playwright-stealth==1.0.6
 pyclipper==1.3.0.post6
 pycparser==2.22
-pydantic==2.10.6
-pydantic_core==2.27.2
 pyee==12.1.1
 PySocks==1.7.1
 pytesseract==0.3.13
@@ -64,8 +60,6 @@ schedule==1.2.2
 scikit-image==0.25.1
 scipy==1.15.1
 scraperapi-sdk==1.5.3
-selenium==4.28.1
-selenium-stealth==1.0.6
 setuptools==75.8.0
 shapely==2.0.7
 six==1.17.0
